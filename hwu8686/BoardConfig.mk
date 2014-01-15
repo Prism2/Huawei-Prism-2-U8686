@@ -22,6 +22,7 @@ TARGET_BOOTLOADER_BOARD_NAME := hwu8686
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei loglevel=1
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00800000	#8388608
